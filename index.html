@@ -1,0 +1,198 @@
+<!DOCTYPE html> <!-- Declaring type of document -->   <!-- This page, "tips.html" was all made by DEAN -->
+<html lang="en"> <!-- Declaring langauge of the webpage -->
+	<head> <!-- Head tag -->
+        <title>Tips/Resources for working online</title> <!-- Title of the webpage -->
+		<link rel="stylesheet" href="css/styles.css"> <!-- Link to the stylesheet using correct file path -->
+		<script src="https://kit.fontawesome.com/926566bafa.js" crossorigin="anonymous"></script>
+	</head> <!-- Closing head tag -->
+	
+	<body class="tippage"> <!-- Body tag for all the main content, given a class name to be styled in the stylesheet-->
+		<h1 class="heading"> Tips/Resources For Working From Home </h1> <!-- Tagline for the webpage -->
+		<div class="nav"> <!-- Navbar in a div tag so everything within the div tag can be collectively edited within the stylesheet --> <!-- Navbar was made by DEAN -->
+			<a href="index.html">Tips</a> <!-- Anchor tag on navbar used to link back to tips.html page, made by DEAN -->
+			<a href="resources.html">Resources</a> <!-- Second anchor tag used to link to resources.html page, made by ADRIANA -->
+			<a href="gallery.html">Gallery</a> <!-- Third anchor tag on navbar used to link to gallery.html page, made by KAITLIN -->
+			<a href="help.html">Help</a> <!-- Fourth anchor tag on navbar used to link to help.html page, made by KAITLIN-->
+			<a class="game" href="game.html">Game</a> <!-- Fifth anchor tag used to link to game.html page + given a class to be used to style content within it red -->
+			<a class="signup" href="signup.html">Sign Up for Newsletter</a> <!-- Sixth anchor tag used to link back to signup.html page + class used to style content within it royal blue-->
+		</div> <!-- Closing div tag -->
+		
+			<a href="index.html"><img src="images/work.png" alt="tip1" class="logo" width="75" height="75"></a> <!-- Logo designed by DEAN -->
+			<h1 class="tips">7 TIPS FOR WORKING AT HOME:</h1> <!-- Second heading tag used to give heading to the main body content -->
+		
+		<div class="tip1"> <!-- Div tag used to group the content within the button tag and paragraph tag for styling -->
+			<button onclick="color1()" class="color1">1. Stick to your routine (Click me)</button> <!-- Clickable button -->
+			<p> You must keep a schedule in order to keep <span id="par1-1"> personal time and work seperate </span>. The key to working at home is <span id="par1-2">stay consistent and follow your typical work patterns</span> as if you were at your place of work. Just like any other day you should get up, eat breakfast and get dressed so you <span id="par1-3">dont slip into a habit of laziness</span>. It is important to stop working at the time you would usually stop working. If you finish at a certain time then you should <span id="par1-4">stop at that time even when working at home</span>. Stop checking your emails and just focus on your personal life from that time onward. Make sure when it is time to go asleep, <span id="par1-5">you go asleep at normal time</span>. Just because your working from home <span id="par1-6">does not mean you should stay up later</span>. A steady schedule is <span id="par1-7">key to success</span> to working from home.</p> 
+			<!-- Paragraph one with multiple span tags that are used to style certain text you want to style within it. All span tags are given different ids that will be used to target that specific id individually without changing the style of all the span tags if needed -->
+		
+		<script> // Javascript implemented 
+		function color1(){ // Given my first button a function
+		
+				document.getElementById('par1-1').style.color ="orange"; // Changing the color of the writing within these IDs to orange
+				document.getElementById('par1-2').style.color ="orange";
+				document.getElementById('par1-3').style.color ="orange";
+				document.getElementById('par1-4').style.color ="orange";
+				document.getElementById('par1-5').style.color ="orange";
+				document.getElementById('par1-6').style.color ="orange";
+				document.getElementById('par1-7').style.color ="orange";
+				document.getElementById('par1-7').style.fontSize = "x-large";
+		}
+		</script> <!-- Closing Javascript tag -->
+		</div> 
+		
+			<img src="images/routine.jpeg" alt="tip1" class="routine"> <!-- Img tag used to place images on the webpage, file path used to source image within the seperate image folder -->
+	
+		<div class="tip2"> <!-- Div tag used to group the content within the second button tag and second paragraph tag for styling -->
+			<button onclick="color2()">2. Find a dedicated workspace (Click me)</button> <!-- Second Clickable Button -->
+			<p> If it is possible you should find a <span id="par2-1">nice quiet place away from any people or distractions</span> in order for you to <span id="par2-2">work efficiently</span>. Before sitting down to work make sure you have everything you need in order to work so you dont spend time getting up and <span id="par2-3">stopping your work</span>. This would include things such as pen, paper, staplers, laptop etc. You should <span id="par2-4">make yourself comfortable, but not too comfortable</span>. Although the sofa may look like a good and comfortable place to sit, you should <span id="par2-5">preferably sit at a desk while working</span>. In order to set up your workplace correctly you should <span id="par2-6">refer to the NHS guidelines</span>.</p> 
+			<!-- Paragraph two with multiple span tags that are used to style certain text you want to style within it. All span tags are given different ids that will be used to target that specific id individually without changing the style of all the span tags if needed -->
+			
+		<script> // Javascript implemented
+		function color2(){ // Given second button a function 
+				document.getElementById('par2-1').style.color ="red"; // Changing the color of the writing within these IDs to red
+				document.getElementById('par2-2').style.color ="red";
+				document.getElementById('par2-3').style.color ="red";
+				document.getElementById('par2-4').style.color ="red";
+				document.getElementById('par2-5').style.color ="red";
+				document.getElementById('par2-6').style.color ="red";
+				document.getElementById('par2-6').style.fontSize ="x-large";
+		}
+		</script>
+		</div> 
+		
+			<img src="images/workplace.jpg" alt="tip2" class="workplace"> <!-- Img tag used to place images on the webpage, file path used to source image within the seperate image folder -->
+		
+		<div class="tip3"> <!-- Div tag used to group the content within the third button tag and third paragraph tag for styling -->
+			<button onclick="color3()"> 3. Breaks (Click me)</button> <!-- Third Clickable Button -->
+			<p>In order to manage stress levels <span id="par3-1">it's important to manage your breaks</span>. In order to stay focused you should <span id="par3-2">give yourself regular screen breaks</span> and a <span id="par3-3">break for when it's time to eat lunch</span>. Every hour you should <span id="par3-4">take 5-10 minute breaks to inscrease productivity levels of your work</span>. If possible, spend time getting fresh air outdoors as it is <span id="par3-5">good for the mind</span>. Spending time in a green space can really <span id="par3-6">help you with your mental health</span>. Set a time to during the day to go for a <span id="par3-7">walk, bike ride, run or even a cup of coffee</span>.</p>
+			<!-- Paragraph third with multiple span tags that are used to style certain text you want to style within it. All span tags are given different ids that will be used to target that specific id individually without changing the style of all the span tags if needed -->
+		
+		<script> // Javascript implemented
+		function color3(){ // Given third button a function
+				document.getElementById('par3-1').style.color ="yellow";
+				document.getElementById('par3-2').style.color ="yellow";
+				document.getElementById('par3-3').style.color ="yellow";
+				document.getElementById('par3-4').style.color ="yellow";
+				document.getElementById('par3-5').style.color ="yellow";
+				document.getElementById('par3-6').style.color ="yellow";
+				document.getElementById('par3-7').style.color ="yellow";
+				document.getElementById('par3-5').style.fontSize ="x-large";
+		}
+		</script>
+		</div> 
+		
+			<img src="images/break.png" alt="tip3" class="break"> <!-- Img tag used to place images on the webpage, file path used to source image within the seperate image folder -->
+		
+		<div class="tip4"> <!-- Div tag used to group the content within the fourth button tag and fourth paragraph tag for styling -->
+			<button onclick="color4()">4. Stay connected (Click me)</button> <!-- Fourth Clickable Button -->
+			<p> Although working from home has benefits to it, working from home <span id="par4-1">can also cause feelings of isolation</span>. It is <span id="par4-2">important you stay in touch with the people that matter to you</span> to not only boost their well being but to also <span id="par4-3">boost your own mental state</span>. Instead of emailing you should <span id="par4-4">schedule a video call or pick up the phone</span>. If working from home causes you stress and is causing you some concerns you should speak to your work colleagues or manager about it. Your <span id="par4-5">colleagues may be able to understand your concerns as they may have the same problems you are having with working from home</span>. Ask how they are doing and if there is something you can do to support each other it is important to do this to <span id="par4-6">relieve any stress you may be experiencing</span>. Make time for them whether it be a get together on a day you are both free or even a <span id="par4-7">virtual coffee break together and a chat</span>.</p> 
+			<!-- Paragraph four with multiple span tags that are used to style certain text you want to style within it. All span tags are given different ids that will be used to target that specific id individually without changing the style of all the span tags if needed -->
+			
+		<script> // Javascript implemented
+		function color4(){ // Given fourth button a function
+				document.getElementById('par4-1').style.color ="blue";
+				document.getElementById('par4-2').style.color ="blue";
+				document.getElementById('par4-3').style.color ="blue";
+				document.getElementById('par4-4').style.color ="blue";
+				document.getElementById('par4-5').style.color ="blue";
+				document.getElementById('par4-6').style.color ="blue";
+				document.getElementById('par4-7').style.color ="blue";
+				document.getElementById('par4-3').style.fontSize ="x-large";
+		}
+		</script>
+		</div>
+		
+			<img src="images/connected.jpg" alt="tip4" class="connected"> <!-- Img tag used to place images on the webpage, file path used to source image within the seperate image folder -->
+		
+		<div class="tip5"> <!-- Div tag used to group the content within the fifth button tag and fifth paragraph tag for styling -->
+			<button onclick="color5()">5. Boundaries (Click me)</button> <!-- Fifth Clickable Button -->
+			<p>Setting boundaries between yourself and other members within your household is <span id="par5-1">key for your mental well being while working and increases productivity</span>. Because your working at home you are more flexible and should <span id="par5-2">enjoy the benefits</span> however it can be difficult to work <span id="par5-3">if you do not set boundaries</span>, for example your children may think your on holidays which is not the case so <span id="par5-4">boundaries need to be set with them</span>. Have a discussion about your needs, especially with family. Remind them that this is not the case and you <span id="par5-5">need to focus on your work</span>. Because your working from home and your home is your office it's easier to stay logged in, however you <span id="par5-6">need to switch it off when needed</span> in order to spend time <span id="par5-7">with your family</span>.</p> 
+			<!-- Paragraph five with multiple span tags that are used to style certain text you want to style within it. All span tags are given different ids that will be used to target that specific id individually without changing the style of all the span tags if needed -->
+			
+		<script> // Javascript implemented
+		function color5(){ // Given fifth button a function
+				document.getElementById('par5-1').style.color ="purple";
+				document.getElementById('par5-2').style.color ="purple";
+				document.getElementById('par5-3').style.color ="purple";
+				document.getElementById('par5-4').style.color ="purple";
+				document.getElementById('par5-5').style.color ="purple";
+				document.getElementById('par5-6').style.color ="purple";
+				document.getElementById('par5-7').style.color ="purple";
+				document.getElementById('par5-2').style.fontSize ="x-large";
+		}
+		</script>
+		</div> 
+		
+			<img src="images/boundaries.jpg" alt="tip5" class="boundaries"> <!-- Img tag used to place images on the webpage, file path used to source image within the seperate image folder -->
+		
+		<div class="tip6"> <!-- Div tag used to group the content within the sixth button tag and sixth paragraph tag for styling -->
+			<button onclick="color6()">6. Think long term (Click me)</button> <!-- Sixth Clickable Button -->
+			<p>You may be working from your home for a while so you should <span id="par6-1">think of ways to increase productivity levels</span> and your <span id="par6-2">efficiency when working from home</span>. Find the <span id="par6-3">best location to work, find better ways to virtual speak with people</span> and any other possibile ideas that will make your work work best for you <span id="par6-4">in the long term</span>.</p>
+			<!-- Paragraph six with multiple span tags that are used to style certain text you want to style within it. All span tags are given different ids that will be used to target that specific id individually without changing the style of all the span tags if needed -->
+			
+		<script> // Javascript implemented
+		function color6(){ // Given sixth button a function
+				document.getElementById('par6-1').style.color ="pink";
+				document.getElementById('par6-2').style.color ="pink";
+				document.getElementById('par6-3').style.color ="pink";
+				document.getElementById('par6-4').style.color ="pink";
+				document.getElementById('par6-4').style.fontSize ="x-large";
+		}
+		</script>
+		</div> 
+		
+			<img src="images/future.jpg" alt="tip6" class="future"> <!-- Img tag used to place images on the webpage, file path used to source image within the seperate image folder -->
+		
+		<div class="tip7"> <!-- Div tag used to group the content within the seventh button tag and seventh paragraph tag for styling -->
+			<button onclick="color7()">7. Be kind to yourself (Click me)</button> <!-- Seventh Clickable Button -->
+			<p>It is important to remember that this may <span id="par7-1">not feel normal as it is an unusual situation</span>. Acknowledge that you may not be as <span id="par7-2">productive as you usually are</span> if you were to work from the job location rather than at home but you should <span id="par7-3">still be kind to yourself</span>. In given the certain circumstances you should <span id="par7-4">be realistic with yourself on what you can achieve</span> and <span id="par7-5">give yourself time to relax</span> when the work is done.</p> 
+			<!-- Paragraph seven with multiple span tags that are used to style certain text you want to style within it. All span tags are given different ids that will be used to target that specific id individually without changing the style of all the span tags if needed -->
+			
+		<script> // Javascript implemented
+			function color7(){ // Given seventh button a function
+				document.getElementById('par7-1').style.color ="green";
+				document.getElementById('par7-2').style.color ="green";
+				document.getElementById('par7-3').style.color ="green";
+				document.getElementById('par7-4').style.color ="green";
+				document.getElementById('par7-5').style.color ="green";
+				document.getElementById('par7-3').style.fontSize ="x-large";
+			}
+		</script>
+		</div> 
+		
+			<img src="images/kind.jpg" alt="tip7" class="kind"> <!-- Img tag used to place images on the webpage, file path used to source image within the seperate image folder -->
+			
+		<footer class="footer"> <!-- Footer made by DEAN -->
+			<a href="index.html"><img src="images/work.png" alt="tip1" class="footerlogo" width="75" height="75"></a> <!-- Logo designed by DEAN -->
+			<div class="footercontainer">
+				<div class="footerrow">
+					<div class="footer-col">
+					<h4> Directory </h4>
+					<ul class="ful">
+					
+					<li class="fli"><a href="index.html">Tips</a></li> <!-- Anchor tag on footer used to link back to tips.html page, made by DEAN -->
+					<li class="fli"><a href="resources.html">Resources</a></li> <!-- Second anchor tag used to link to resources.html page, made by ADRIANA -->
+					<li class="fli"><a href="gallery.html">Gallery</a></li> <!-- Third anchor tag on navbar used to link to gallery.html page, made by KAITLIN -->
+					<li class="fli"><a href="help.html">Help</a></li> <!-- Fourth anchor tag on navbar used to link to help.html page, made by KAITLIN-->
+					<li class="fli"><a href="game.html">Game</a></li> <!-- Fifth anchor tag used to link to game.html page + given a class to be used to style content within it red -->
+					<li class="fli"><a href="tips.html">Newsletter</a></li> <!-- Sixth Anchor tag used to link to signup.html -->
+					</ul>
+					</div>
+					
+					<div class="footer-col">
+					<h4> Follow us on </h4>
+					<div class="socials">
+						<ul class="ful">
+							<li class="fli"><i class="fa-brands fa-square-facebook" style="font-size:40px"></i></li> <!-- Icons got from fontawesome -->
+							<li class="fli"><i class="fa-brands fa-square-instagram" style="font-size:40px"></i></li>
+							<li class="fli"><i class="fa-brands fa-square-twitter" style="font-size:40px"></i></li>
+							<li class="fli"><i class="fa-brands fa-square-snapchat" style="font-size:40px"></i></li>
+							<li class="fli"><i class="fa-brands fa-square-youtube" style="font-size:40px"></i></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		</footer>	
+	</body> <!-- Closing body tag -->
+</html> <!-- Closing html tag -->

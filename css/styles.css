@@ -1,0 +1,1316 @@
+/* Stylesheet for website. Each person made and styled their own page by themselves. All pages are styled one after another besides the navbar and logo which are both at the beginning as they are a consistent feature on all pages. 
+Dean made and styled BOTH tips.html and signup.html (form) , he made the navbar, footer and logo also. He also done all of the responsiveness of all webpages besides the gallery as KAITLIN took way too long to give me the updated version of her gallery page.
+Adriana made and styled BOTH resources.html and game.html (mini-game)
+Kaitlin made and styled BOTH help.html and gallery.html (gallery)
+*/
+
+													/* START of tips.html made and styled by DEAN */
+.tippage{                                      		/* Body of tips page */
+	font-family: Garamond, serif;          		 	/* First font chosen */
+	background-image: url("../images/backimg.jpg"); /* Background image with correct file path */
+}
+
+.heading{											/* Heading of the webpage */
+	font-family: 'Brush Script MT', cursive; 		/* Second font chosen */
+	position: relative;
+	left: 10px;
+	color: white;
+}													/* Heading position is relative so it is not overlapping other content */
+
+.logo{ 												/* Logo made by Dean */
+	position: absolute;
+	top: 7px;
+	right: 40px;
+}													/* Positioning the logo to absolute so i can move it on its own without any interference from other code, it allows me to it over other content. Top 7px means its 7px from the top of the webpage but only when position is absolute */
+
+.nav{												/* Navbar made by Dean */
+  overflow: hidden;
+  background-color: #333;
+  font-family: 'Brush Script MT', cursive;
+}
+
+.nav a{												/* Anchor tags within navbar styling */
+  float: left;										
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Brush Script MT', cursive;
+}													/* Positioning the anchor tags to start from the left with some padding, making some space outward from the text */
+
+.nav a:hover{										/* Styling of navbar text when you hover the cursor over it */
+  background-color: white;
+  color: black;
+  font-family: 'Brush Script MT', cursive;
+}													/* Changing the background color and color of text when hovered over */
+	
+.game{												/* Anchor tag of "Game" styled red */
+	background-color: #ff0000;
+	color: white;
+}
+
+.signup{											/* Anchor tag "Sign up for Newsletter" styled (the form) */
+	background-color: royalblue;
+	color: white;
+	position: absolute;
+	right: 0px;
+}													/* Sign up anchor tag for the form/newsletter is styled to change be royal blue */
+
+.tips{												/* Heading of the body content */
+	font-family: Garamond, serif;
+	text-align: center;
+	color: white;
+	top: 20px;
+}													/* Heading for the body is centered, making it perfectly in the middle */
+													/* All images and paragraphs are manually spaced using position absolute */
+.tip1{												/* Paragraph one styling */
+	position: absolute;
+	top: 260px;
+	left: 260px;
+	right: 5px;
+	text-align: center;
+	color: white;
+}
+
+.routine{											/* Image beside paragraph 1  */
+	position: absolute;
+	top: 250px;
+	left: 0px;
+	width: 250px;
+	height: 250px;
+}
+
+.tip2{												/* Paragraph 2 */
+	position: absolute;
+	top: 510px;
+	left: 0px;
+	right: 260px;
+	left: 5px;
+	text-align: center;
+	color: white;
+}
+
+.workplace{											/* Image beside paragraph 2 */
+	position: absolute;
+	top: 460px;
+	right: 0px;
+	width: 250px;
+	height: 250px;
+}
+
+.tip3{												/* Paragraph 3 */
+	position: absolute;
+	top: 740px;
+	left: 260px;
+	right: 5px;
+	text-align: center;
+	color: white;
+}
+
+.break{												/* Image beside paragraph 3 */
+	position: absolute;
+	top: 710px;
+	left: 0px;
+	width: 200px;
+	height: 200px;
+}
+
+.tip4{												/* Paragraph 4 */
+	position: absolute;
+	top: 990px;
+	right: 260px;
+	left: 5px;
+	text-align: center;
+	color: white;
+}
+
+.connected{											/* Image beside paragraph 4 */
+	position: absolute;
+	top: 960px;
+	right: 0px;
+	width: 250px;
+	height: 250px;
+}
+
+.tip5{												/* Pargraph 5 */
+	position: absolute;
+	top: 1240px;
+	left: 260px;
+	right: 5px;
+	text-align: center;
+	color: white;
+}
+
+.boundaries{										/* Image beside pargraph 5 */
+	position: absolute;
+	top: 1210px;
+	left: 0px;
+	width: 250px;
+	height: 250px;
+}
+
+.tip6{												/* Paragraph 6 */
+	position: absolute;
+	top: 1490px;
+	right: 260px;
+	left: 5px;
+	text-align: center;
+	color: white;
+}
+
+.future{											/* Image beside paragraph 6 */
+	position: absolute;
+	top: 1460px;
+	right: 0px;
+	width: 250px;
+	height: 250px;
+}
+
+.tip7{												/* Paragraph 7 */
+	position: absolute;
+	top: 1740px;
+	left: 260px;
+	right: 5px;
+	text-align: center;
+	color: white;
+}
+
+.kind{												/* Image beside paragraph 7 */
+	position: absolute;
+	top: 1710px;
+	left: 0px;
+	width: 250px;
+	height: 250px;
+}													
+
+*{
+	padding:0;
+	box-sizing: border-box;
+}
+
+.footercontainer{									/* Changing container background color to red */
+	max-width: 1170px;
+	background-color: black;
+	margin: auto;
+}
+
+.ful{												/* Taking out the bullet points */
+	list-style: none;
+}
+
+.footer{											/* Giving my footer some padding from the text */
+	width: 100%;
+	background-color: black;
+	position: absolute;
+	top: 2000px;
+	color: white;
+	padding: 70px;
+}
+
+.footerrow{											/* Making the rows go beside eachother from left to right */
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-col{										/* Giving my footer columns some space between eachother */
+	width: 50%;
+	padding: 0 15px;
+}
+
+.footer-col h4{										/* Giving my footer columns some space between eachother */
+	font-size: 18px;
+	color: white;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before{								/* Adding line under the h4 tags */
+	content: '';
+	position: absolute;
+	left: 0px;
+	bottom: -10px;
+	background-color: white;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){					/* Spacing out the content in the footer */
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{								/* Removing the lines under the links */
+	font-size: 16px;
+	text-transform: capitalize;
+	color: white;
+	text-decoration: none;
+	font-weight: 300;
+	display: block;
+}
+
+.footerlogo{										/* Logo placed on the footer */
+	position: absolute;
+	top: 200px;
+	right: 20px;
+	width: 100px;
+	height: 100px;
+	right: 50px;
+}													/* END of tips.html styling. All styling of this page was done by DEAN */
+
+/* ABOUT TO BEGIN NEW WEBPAGE - resources.html */
+
+.resourcebody{										/* START of resource.html page made and styled by ADRIANA */
+	font-family: Garamond, serif;
+	background-image: url("../images/backimg.jpg"); 			/* Consistent background image with correct file path */
+	color: white;
+}
+
+.res{												/* Heading for the body content */
+	font-family: Garamond, serif;
+	text-align: center;
+	color: white;
+	top: 20px;
+}
+
+.res1{												/* Paragraph 1 */
+	position: absolute;
+	top: 260px;
+	left: 260px;
+	text-align: center;
+	color: white;
+	border: 2px white;
+}
+
+.remotepic{											/* Image beside paragraph 1 */
+	position: absolute;
+	top: 260px;
+	left: 0px;
+	width: 250px;
+	height: 250px;
+}
+
+.button2-1{											/* Button that highlights text and changes some font size in paragraph 1 */ 
+	background-color: red;
+	font-size: 10px;
+}
+
+.button2-2{											/* Button that highlights text and changes some font size in paragraph 3 */ 
+	background-color: yellow;
+	font-size: 10px;
+}
+
+
+.res2{												/* Paragraph 3 */
+	position: absolute;
+	top: 580px;
+	left: 0px;
+	right: 260px;
+	text-align: center;
+	color: white;
+}
+
+.respic{											/* Image beside paragraph 3 */
+	position: absolute;
+	top: 530px;
+	right: 0px;
+	width: 250px;
+	height: 250px;
+}													
+
+.resourcefooter{											/* Giving my footer some padding from the text */
+	width: 100%;
+	background-color: black;
+	position: absolute;
+	top: 800px;
+	color: white;
+	padding: 70px;
+}													/* END of resources.html made and styled by ADRIANA. */
+
+/* ABOUT TO BEGIN NEW WEBPAGE - help.html*/
+
+													/* START of help.html made and styled by KAITLIN */
+													
+.helpbody{											/* Body of help.html */
+  font-family: Garamond, serif;
+  margin: 0;
+  background-image: url("../images/backimg.jpg");			/* Consistent background image used with correct file path */
+  color: white;
+}
+
+.commonqs{
+	text-align: center;
+	font-size: 30px;
+	position: relative;
+	left: -20px;
+}
+
+.question1{
+  white-space: nowrap;
+  width: 600px;
+  text-overflow: clip;
+  font-family: 'Savana', cursive;
+  position: relative;
+  left: 500px;
+}
+
+.swipe{
+  padding: 0px;
+  width: 600px;
+  border: 1px solid #000000;
+  background-color: white;
+  position: relative;
+  left: 300px;
+  text-align: center;
+  color: black;
+}
+
+.question2 {
+  white-space: nowrap;
+  width: 600px;
+  text-overflow: clip;
+  font-family: 'Savana', cursive;
+  position: relative;
+  left: 500px;
+}
+
+
+.contactinfo{
+	text-align: center;
+	font-size: 30px;
+	position: relative;
+	left: -10px;
+}
+
+.info{
+  white-space: nowrap;
+  width: 300px;
+  border: 1px solid #000000;
+  text-overflow: clip;
+  left: 500px;
+  position: relative;
+}											
+
+.helpfooter{											
+	width: 100%;
+	background-color: black;
+	position: absolute;
+	top: 700px;
+	color: white;
+	padding: 70px;
+}					
+
+.helpflogo{
+	right: 50px;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 150px;
+}													/* END of help.html made and styled by KAITLIN */
+
+/* ABOUT TO BEGIN NEW WEBPAGE - gallery.html */
+															
+													/* START of gallery.html made and styled by KAITLIN */
+													
+.gallerybody{										/* Body of gallery.html */
+  font-family: Garamond, serif;
+  margin: 0px;
+  background-image: url("../images/backimg.jpg"); 			/* Consistent background image used with correct file path */
+  color: white;
+}
+
+.gallogo{											/* Logo for gallery made and styled by DEAN */
+	position: absolute;
+	top: 3px;
+	right: 40px;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.galcontainer{
+  position: relative;
+  left: 125px;
+}
+
+/* Hide the images by default */
+.mySlides{
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor{
+ cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next{
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.galleryfooter{											/* Giving my footer some padding from the text */
+	width: 100%;
+	background-color: black;
+	position: absolute;
+	top: 1000px;
+	color: white;
+	padding: 70px;
+}								
+
+.galleryflogo{	
+	right: 50px;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 150px;
+}															/* END of gallery.html made and styled by KAITLIN */
+
+/* ABOUT TO BEGIN NEW WEBPAGE - signup.html */
+
+																/* START of signup.html made and styled by DEAN */
+
+.formbody{														/* Body content of signup.html */
+	font-family: Garamond, serif;
+	margin: 5px;
+	color: white;
+	background-image: url("../images/backimg.jpg");
+	text-align: justify;
+}						
+
+.formflogo{
+	position: absolute;
+	top: 1100px;
+	right: 50px;
+	width: 80px;
+	height: 80px;
+}																/* END of signup.html made and styled by DEAN */
+
+/* ABOUT TO BEGIN NEW WEBPAGE - game.html */
+
+																/* START of game.html made and styled by ADRIANA */
+
+.gamebody{														/* Body content of game.html */
+	font-family: Garamond, serif;
+	background-image: url("../images/backimg.jpg"); 			/* Consistent background image with correct file path */
+	color: white;
+}
+
+.gamefooter{													/* Giving my footer some padding from the text */
+	width: 100%;
+	background-color: black;
+	position: absolute;
+	top: 900px;
+	color: white;
+	padding: 70px;
+}						
+
+.demo{
+		font-size: 30px;
+}																/* END of game.html made and styled by ADRIANA */
+
+/* RESPONSIVENESS 
+ALL responsiveness work on tips.html, resources.html, signup.html and game.html was done by DEAN */ 
+
+/* Styling on screens that are 980px max */
+@media screen and (max-width: 980px){
+	
+	.nav a{
+		float: left;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 12px 14px;
+		text-decoration: none;
+		font-size: 15px;
+		font-family: 'Brush Script MT', cursive;
+	}
+	
+	.logo{
+		position: absolute;
+		top: 1px;
+		right: 35px;
+		width: 60px;
+		height: 60px;
+	}
+	
+	.tippage{
+		font-size: 12px;
+	}
+	
+	.tips{
+		font-size: 32px;
+	}
+	
+	.tip1{
+		position: absolute;
+		top: 200px;
+		left: 260px;
+		right: 10px;
+		text-align: center;
+		color: white;
+		border: 2px white;
+	}
+
+	.routine{
+		position: absolute;
+		top: 210px;
+		right: 0px;
+		width: 230px;
+		height: 230px;
+	}
+
+	.tip2{
+		position: absolute;
+		top: 450px;
+		left: 10px;
+		right: 260px;
+		text-align: center;
+		color: white;
+	}
+
+	.workplace{
+		position: absolute;
+		top: 430px;
+		right: 0px;
+		width: 230px;
+		height: 230px;
+	}
+
+	.tip3{
+		position: absolute;
+		top: 680px;
+		left: 260px;
+		right: 10px;
+		text-align: center;
+		color: white;
+	}
+
+	.break{
+		position: absolute;
+		top: 650px;
+		left: 0px;
+		width: 230px;
+		height: 230px;
+	}
+
+	.tip4{
+		position: absolute;
+		top: 930px;
+		right: 260px;
+		left: 10px;
+		text-align: center;
+		color: white;
+	}
+
+	.connected{
+		position: absolute;
+		top: 900px;
+		right: 0px;
+		width: 230px;
+		height: 230px;
+	}
+
+	.tip5{
+		position: absolute;
+		top: 1180px;
+		left: 260px;
+		right: 10px;
+		text-align: center;
+		color: white;
+	}
+
+	.boundaries{
+		position: absolute;
+		top: 1200px;
+		left: 0px;
+		width: 230px;
+		height: 230px;
+	}
+
+	.tip6{
+		position: absolute;
+		top: 1450px;
+		right: 260px;
+		left: 10px;
+		text-align: center;
+		color: white;
+	}
+
+	.future{
+		position: absolute;
+		top: 1420px;
+		right: 0px;
+		width: 230px;
+		height: 230px;
+	}
+
+	.tip7{
+		position: absolute;
+		top: 1720px;
+		left: 260px;
+		right: 10px;
+		text-align: center;
+		color: white;
+	}
+
+	.kind{
+		position: absolute;
+		top: 1650px;
+		left: 0px;
+		width: 230px;
+		height: 230px;
+	}
+	
+	/* Responsiveness of signup.html done by DEAN */
+	
+	.resourcebody{
+		font-size: 12px;
+	}
+	
+	.res1{
+		position: absolute;
+		top: 200px;
+		left: 260px;
+		text-align: center;
+		color: white;
+		border: 2px white;
+	}
+	
+	.remotepic{
+		position: absolute;
+		top: 215px;
+		left: 0px;
+		width: 230px;
+		height: 230px;
+	}
+	
+	.respic{
+		width: 230px;
+		height: 230px;
+	}
+	
+	/* Responsiveness of signup.html done by DEAN */
+	
+	.formbody{		
+		font-size: 12px;
+		margin: 5px;
+		text-align: justify;
+	}
+	
+	.formflogo{										
+		position: absolute;
+		top: 840px;
+		right: 20px;
+		width: 70px;
+		height: 70px;
+	}
+	
+		
+	/* Responsiveness of help.html done by DEAN */
+	
+	.helpbody{
+		font-size: 12px;
+		text-align: justify;
+		margin: 0px;
+	}
+	
+	.contactinfo{
+		font-size: 22px;
+	}
+	
+	.info{
+		font-size: 16px;
+		left: 300px;
+	}
+	
+	.swipe{
+		padding: 0px;
+		width: 250px;
+		border: 1px solid #000000;
+		background-color: white;
+		position: relative;
+		left: 330px;
+		text-align: center;
+		color: black;
+	}
+
+	.question1{
+		left: 380px;
+	}
+
+	.question2{
+		left: 340px;
+	}
+	
+	.helpflogo{										
+		position: absolute;
+		top: 140px;
+		right: 30px;
+		width: 80px;
+		height: 80px;
+	}
+	/* Responsiveness of game.html done by DEAN */
+	
+	.gamebody{
+		font-size: 12px;
+	}
+}
+
+/* STYLING on screens that are 600px max */
+@media screen and (max-width: 600px){
+	
+	/* Responsiveness of tips.html + navbar, footer and logo that is used across all pages all done by DEAN */
+	
+	.tips{
+		font-size: 12px;
+	}
+	
+	.logo{
+		position: absolute;
+		top: 1px;
+		right: 40px;
+		width: 45px;
+		height: 45px;
+	}
+	
+	.nav a{
+		float: left;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 12px 14px;
+		text-decoration: none;
+		font-size: 12px;
+		font-family: 'Brush Script MT', cursive;
+	}
+	
+	.heading{
+		font-size: 18px;
+	}
+	
+	.tips{
+		font-size: 28px;
+	}
+	
+	.tip1{
+		position: absolute;
+		top: 150px;
+		left: 20px;
+		right: 20px;
+		text-align: center;
+		color: white;
+	}
+	
+	.routine{
+		width: 300px;
+		height: 300px;
+		left: 140px;
+		top: 320px;
+	}
+	
+	.tip2{
+		position: absolute;
+		top: 640px;
+		left: 20px;
+		text-align: center;
+		right: 20px;
+		color: white;
+	}
+	
+	.workplace{
+		width: 300px;
+		height: 300px;
+		top: 795px;
+		left: 140px;
+	}
+	
+	.tip3{
+		position: absolute;
+		top: 1110px;
+		left: 20px;
+		text-align: center;
+		right: 20px;
+		color: white;
+	}
+	
+	.break{
+		width: 300px;
+		height: 300px;
+		top: 1250px;
+		left: 140px;
+	}
+
+	.tip4{
+		position: absolute;
+		top: 1570px;
+		left: 20px;
+		text-align: center;
+		right: 20px;
+		color: white;
+	}
+	
+	.connected{
+		width: 300px;
+		height: 300px;
+		top: 1765px;
+		left: 140px;
+	}
+	
+	.tip5{
+		position: absolute;
+		top: 2080px;
+		left: 20px;
+		text-align: center;
+		right: 20px;
+		color: white;
+	}
+	
+	.boundaries{
+		width: 300px;
+		height: 300px;
+		top: 2250px;
+		left: 140px;
+	}
+	
+	.tip6{
+		position: absolute;
+		top: 2565px;
+		left: 20px;
+		text-align: center;
+		right: 20px;
+		color: white;
+	}
+	
+	.future{
+		width: 300px;
+		height: 300px;
+		top: 2670px;
+		left: 140px;
+	}
+	
+	.tip7{
+		position: absolute;
+		top: 2985px;
+		left: 20px;
+		text-align: center;
+		right: 20px;
+		color: white;
+	}
+	
+	.kind{
+		width: 300px;
+		height: 300px;
+		top: 3110px;
+		left: 140px;
+	}
+	
+	.footer{											
+		width: 100%;
+		background-color: black;
+		position: absolute;
+		top: 3410px;
+		color: white;
+		padding: 70px;
+	}
+
+	/* Responsiveness of resources.html done by DEAN */
+	
+	.res1{
+		position: absolute;
+		top: 180px;
+		text-align: center;
+		left: 20px;
+		right: 20px;
+	}
+	
+	.remotepic{
+		width: 300px;
+		height: 300px;
+		left: 150px;
+		top: 420px;
+	}
+	
+	.res2{
+		position: absolute;
+		left: 20px;
+		right: 20px;
+		top: 740px;
+		text-align: center;
+	}
+	
+	.respic{
+		width: 300px;
+		height: 300px;
+		top: 880px;
+		left: 150px;
+	}
+	
+	.resourcefooter{
+		top: 1210px;
+	}
+	
+	/* Responsiveness of signup.html done by DEAN */
+	
+	.formbody{		
+		font-size:	15px;
+		margin:0;
+		text-align: justify;
+	}
+	
+	.formflogo{
+		position: absolute;
+		top: 900px;
+		right: 40px;
+		width: 60px;
+		height: 60px;
+	}
+	
+	.formtext{
+		text-align: center;
+	}
+	
+	.formfooterlogo{										
+		position: absolute;
+		top: 500px;
+		right: 20px;
+		width: 70px;
+		height: 70px;
+		right: 20px;
+	}
+	
+	/* Responsiveness of game.html done by DEAN */
+	
+	.fortune{
+		font-size: 22px;
+		text-align: center;
+	}
+	
+	.talk{
+		position: absolute;
+		font-size: 18px;
+		left: 140px;
+		top: 150px;
+	}
+	
+	.robot{
+		width: 300px;
+		height: 300px;
+		left: 5px;
+		position: absolute;
+		top: 160px;
+	}
+	
+	.gamefooter{
+		top: 650px;
+	}
+	
+	/* Responsiveness of help.html done by DEAN */
+	
+	.swipe{
+		padding: 0px;
+		width: 180px;
+		border: 1px solid #000000;
+		background-color: white;
+		position: relative;
+		left: 10px;
+		text-align: justify;
+		color: black;
+	}
+	
+	.info, .question1, .question2{   /* changing all these styles at once to be 10px from the left */
+		left: 10px;
+		font-size: 14px;
+	}
+	
+	.commonqs, .contactinfo{
+		left: -150px;
+		font-size: 16px;
+	}
+		
+	.helpflogo{										
+		position: absolute;
+		top: 140px;
+		right: 20px;
+		width: 60px;
+		height: 60px;
+	}
+	
+/* STYLING on screens that are 500px max */
+@media screen and (max-width: 520px){
+	
+	.tip1{
+		position: absolute;
+		top: 180px;
+		left: 10px;
+		right: 10px;
+		text-align: center;
+		color: white;
+	}
+	
+	.routine{
+		width: 250px;
+		height: 250px;
+		left: 110px;
+		top: 360px;
+	}
+	
+	.tip2{
+		position: absolute;
+		top: 620px;
+		left: 10px;
+		right: 10px;
+		text-align: center;
+		color: white;
+	}
+	
+	.workplace{
+		width: 250px;
+		height: 250px;
+		top: 770px;
+		left: 110px;
+	}
+	
+	.tip3{
+		position: absolute;
+		top: 1040px;
+		left: 10px;
+		right: 10px;
+		text-align: center;
+		right: 20px;
+		color: white;
+	}
+	
+	.break{
+		width: 250px;
+		height: 250px;
+		top: 1200px;
+		left: 110px;
+	}
+
+	.tip4{
+		position: absolute;
+		top: 1470px;
+		left: 10px;
+		text-align: center;
+		right: 10px;
+		color: white;
+	}
+	
+	.connected{
+		width: 250px;
+		height: 250px;
+		top: 1670px;
+		left: 110px;
+	}
+	
+	.tip5{
+		position: absolute;
+		top: 1940px;
+		left: 10px;
+		right: 10px;
+		text-align: center;
+		color: white;
+	}
+	
+	.boundaries{
+		width: 250px;
+		height: 250px;
+		top: 2120px;
+		left: 110px;
+	}
+	
+	.tip6{
+		position: absolute;
+		top: 2390px;
+		left: 10px;
+		right: 10px;
+		text-align: center;
+		color: white;
+	}
+	
+	.future{
+		width: 250px;
+		height: 250px;
+		top: 2510px;
+		left: 110px;
+	}
+	
+	.tip7{
+		position: absolute;
+		top: 2780px;
+		left: 10px;
+		right: 10px;
+		text-align: center;
+		color: white;
+	}
+	
+	.kind{
+		width: 250px;
+		height: 250px;
+		top: 2920px;
+		left: 110px;
+	}
+	
+	.footer{											
+		width: 100%;
+		background-color: black;
+		position: absolute;
+		top: 3170px;
+		color: white;
+		padding: 20px;
+	}
+
+	.formflogo{										
+		position: absolute;
+		top: 880px;
+		right: 20px;
+		width: 45px;
+		height: 45px;
+		right: 20px;
+	}
+
+/* Responsiveness of resources.html done by DEAN */
+	
+	.res1{
+		position: absolute;
+		top: 180px;
+		text-align: center;
+		left: 20px;
+		right: 20px;
+	}
+	
+	.remotepic{
+		width: 300px;
+		height: 300px;
+		left: 100px;
+		top: 440px;
+	}
+	
+	.res2{
+		position: absolute;
+		left: 20px;
+		right: 20px;
+		top: 760px;
+		text-align: center;
+	}
+	
+	.respic{
+		width: 300px;
+		height: 300px;
+		top: 885px;
+		left: 100px;
+	}
+	
+	.resourcefooter{
+		top: 1220px;
+	}
+	
+	/* Responsiveness of signup.html done by DEAN */
+	
+	.formbody{		
+		font-size:	14px;
+		margin:0;
+		text-align: justify;
+	}
+	
+	.formtext{
+		text-align: center;
+	}
+	
+	.formflogo{										
+		position: absolute;
+		top: 880px;
+		right: 20px;
+		width: 50px;
+		height: 50px;
+		right: 20px;
+	}
+
+	/* Responsiveness of game.html done by DEAN */
+	
+	.fortune{
+		font-size: 16px;
+		text-align: center;
+	}
+	
+	.talk{
+		position: absolute;
+		font-size: 14px;
+		left: 90px;
+		top: 150px;
+	}
+	
+	.robot{
+		width: 250px;
+		height: 250px;
+		left: 5px;
+		position: absolute;
+		top: 160px;
+	}
+	
+	.gamefooter{
+		top: 600px;
+	}
+	
+}

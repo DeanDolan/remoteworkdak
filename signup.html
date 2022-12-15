@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Declaring langauge of the webpage -->
+
+	<head>
+		<title> Newsletter </title> <!-- Title of webpage -->
+		<link rel="stylesheet" href="css/styles.css"> <!-- Link to the stylesheet using correct file path -->
+		<script src="https://kit.fontawesome.com/926566bafa.js" crossorigin="anonymous"></script>
+			<h1 class="heading"> Tips/Resources For Working From Home </h1> <!-- Tagline of the webpage -->
+		<script> // Javascript implemented
+			function validateForm(){ // Validating form 
+			let x = document.forms["myForm"]["fn"].value; // letting "fn" (first name) be known as x 
+			if (x == "") {
+			alert("First name must be filled out"); // Alert box with specific message to pop up if first name is not filled out
+			return false;
+			}
+			let y = document.forms["myForm"]["sn"].value; // letting "sn" (surname) be known as y 
+			if (y == "") {
+			alert("Surname must be filled out"); // Alert box with specific message to pop up if first name is not filled out
+			return false;
+			}
+			let z = document.forms["myForm"]["age"].value; // letting age be known as z 
+			if (z == "") {
+			alert("Age must be filled out"); // Alert box with specific message to pop up if first name is not filled out
+			return false;
+			}
+			let a = document.forms["myForm"]["email"].value; // letting email be known as a 
+			if (a == "") {
+			alert("Email must be filled out"); // Alert box with specific message to pop up if first name is not filled out
+			return false;
+			}
+			let b = document.forms["myForm"]["password"].value; // letting password be known as b 
+			if (b == "") {
+			alert("Password must be filled out"); // Alert box with specific message to pop up if first name is not filled out
+			return false;
+			}
+			let c = document.forms["myForm"]["pn"].value; // letting "pn" (phone number) be known as c 
+			if (c == "") {
+			alert("Phone Number must be filled out"); // Alert box with specific message to pop up if first name is not filled out
+			return false;
+			}
+			}
+		</script>
+	</head>
+	<body class="formbody"> <!-- Body tag with class used to style within the stylesheet -->
+		<div class="nav"> <!-- Navbar in a div tag so everything within the div tag can be collectively edited within the stylesheet --> <!-- Navbar was made by DEAN -->
+			<a href="index.html">Tips</a> <!-- Anchor tag on navbar used to link back to tips.html page, made by DEAN -->
+			<a href="resources.html">Resources</a> <!-- Second anchor tag used to link to resources.html page, made by ADRIANA -->
+			<a href="gallery.html">Gallery</a> <!-- Third anchor tag on navbar used to link to gallery.html page, made by KAITLIN -->
+			<a href="help.html">Help</a> <!-- Fourth anchor tag on navbar used to link to help.html page, made by KAITLIN-->
+			<a class="game" href="game.html">Game</a> <!-- Fifth anchor tag used to link to game.html page + given a class to be used to style content within it red -->
+			<a class="signup" href="signup.html">Sign Up for Newsletter</a> <!-- Sixth anchor tag used to link back to signup.html page + class used to style content within it royal blue-->
+		</div> <!-- Closing div tag -->
+		
+		<div class="formtext">
+			<a href="index.html"><img src="images/work.png" alt="tip1" class="logo" width="75" height="75"></a> <!-- Logo designed by DEAN -->
+			<h1 onmouseover="news()">Sign Up for Newsletter</h1> <!-- Heading of the form -->
+
+			<form name="myForm"  onsubmit="return validateForm()" method="post"> <!-- Form, when submitted will return validation -->
+			<p> First Name:<input type="text" name="fn"></p> <!-- Text box -->
+			<p> Surname: <input type="text" name="sn"></p>
+			<p> Age: <input type="text" name="age"></p>
+			<p> Email Address: <input type="email" name="email"</p> <!-- Email box that requires a "@" symbol -->
+			<p> Password: <input type="password" name="password"</p> <!-- Password box that hides your text when you type in it and an eye symbol to give you an option to see the hidden text -->
+			<p> Phone Number: <input type="text" name="pn"</p>
+			<br><br>
+			<textarea name="comments" rows="4" cols="30">
+			Additional Comments: 
+			</textarea> 
+			<!-- Comment box to type within, usually used to type feedback -->
+			<br><br> <!-- break tags used to space out the content, the more break tags the more space it will give + do not have to close break tags -->
+			<p> What time of day that you normally work at?</p> 
+            <label>Morning</label> <!-- Label tag for name of answer 1 -->
+            <input type="radio" name="toppings" value="Morning" /> <!-- Radio box with the value pre-written -->
+            <br> 
+            <label>Afternoon</label> <!-- Label tag for name of answer 2 -->
+            <input type="radio" name="toppings" value="Afternoon" /> <!-- Radio box with the value pre-written -->
+            <br> 
+            <label>Evening</label> <!-- Label tag for name of answer 3 -->
+            <input type="radio" name="toppings" value="Evening" /> <!-- Radio box with the value pre-written -->
+			<br><br> 
+			<p> What electronic device do you use to work? </p> <!-- P tag used to store the text content i.e the question asked -->
+			<label> Desktop PC </label> <!-- Label tag for name of answer 1 -->
+			<input type="checkbox" name="devices" value="Desktop PC" /> <!-- Checkbox with the value pre-written -->
+			<br> 
+			<label> Laptop </label> <!-- Label tag for name of answer 2 -->
+			<input type="checkbox" name="devices" value="Laptop" /> <!-- Checkbox with the value pre-written -->
+			<br> 
+			<label> Neither </label> <!-- Label tag for name of answer 3 -->
+			<input type="checkbox" name="devices" value="Neither" /> <!-- Checkbox with the value pre-written -->
+			<br><br> 
+			<label> What age range are you? </label> <!-- P tag used to store the text content i.e the question asked -->
+			<select name="age"> <!-- Select tag for dropdown options -->
+				<option> Under 20 </option> <!-- Option tags used to offer an answer to the question -->
+				<option> 20-30 </option> 
+				<option> 31-40 </option> 
+				<option> 41-50 </option> 
+				<option> 51-60 </option> 
+				<option> Over 60 </option> 
+			</select> <!-- Closing select tag -->
+			<br><br> 
+			<input type="submit" value="Sign Up">
+			<br><br>
+			<input type="reset" value="Reset Form">
+			<br><br>
+			</form> <!-- End of form -->
+		</div>
+		
+		<script>
+			function news(){ 
+				document.getElementsByTagName('p')[0].style.color ="red";
+				document.getElementsByTagName('p')[1].style.color ="red";
+				document.getElementsByTagName('p')[2].style.color ="red";
+				document.getElementsByTagName('p')[3].style.color ="red";
+				document.getElementsByTagName('p')[4].style.color ="red";
+				document.getElementsByTagName('p')[5].style.color ="red";
+				document.getElementsByTagName('p')[0].style.fontSize ="x-large";
+				document.getElementsByTagName('p')[1].style.fontSize ="x-large";
+				document.getElementsByTagName('p')[2].style.fontSize ="x-large";
+				document.getElementsByTagName('p')[3].style.fontSize ="x-large";
+				document.getElementsByTagName('p')[4].style.fontSize ="x-large";
+				document.getElementsByTagName('p')[5].style.fontSize ="x-large";
+			}
+		</script>
+			
+		<footer class="signupfooter"> <!-- Footer made by DEAN -->
+			<a href="index.html"><img src="images/work.png" alt="tip1" class="formflogo" width="75" height="75" href="index.html"></a> <!-- Logo designed by DEAN -->
+			<div class="footercontainer">
+				<div class="footerrow">
+					<div class="footer-col">
+					<h4> Directory </h4>
+					<ul class="ful">
+					
+					<li class="fli"><a href="index.html">Tips</a></li> <!-- Anchor tag on footer used to link back to tips.html page, made by DEAN -->
+					<li class="fli"><a href="resources.html">Resources</a></li> <!-- Second anchor tag used to link to resources.html page, made by ADRIANA -->
+					<li class="fli"><a href="gallery.html">Gallery</a></li> <!-- Third anchor tag on navbar used to link to gallery.html page, made by KAITLIN -->
+					<li class="fli"><a href="help.html">Help</a></li> <!-- Fourth anchor tag on navbar used to link to help.html page, made by KAITLIN-->
+					<li class="fli"><a href="game.html">Game</a></li> <!-- Fifth anchor tag used to link to game.html page + given a class to be used to style content within it red -->
+					<li class="fli"><a href="tips.html">Newsletter</a></li> <!-- Sixth Anchor tag used to link to signup.html -->
+					</ul>
+					</div>
+					
+					<div class="footer-col">
+					<h4> Follow us on </h4>
+					<div class="socials">
+						<ul class="ful">
+							<li class="fli"><i class="fa-brands fa-square-facebook" style="font-size:40px"></i></li> <!-- Icons got from fontawesome -->
+							<li class="fli"><i class="fa-brands fa-square-instagram" style="font-size:40px"></i></li>
+							<li class="fli"><i class="fa-brands fa-square-twitter" style="font-size:40px"></i></li>
+							<li class="fli"><i class="fa-brands fa-square-snapchat" style="font-size:40px"></i></li>
+							<li class="fli"><i class="fa-brands fa-square-youtube" style="font-size:40px"></i></li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</div>
+		</footer>		
+	</body> <!-- Closing body tag -->
+</html> <!-- Closing html tag -->

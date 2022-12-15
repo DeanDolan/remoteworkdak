@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+	<html lang="en">
+
+	<head> <!-- opening the head tag-->
+		<title>Gallery</title> <!-- Title to the webpage -->
+		<link rel="stylesheet" href="css/styles.css"><!-- Link to the stylesheet -->
+	
+	<script> <!-- opening the script tag -->
+	function change() {
+	document.getElementsByTagName('p')[0].innerHTML = "Try following some of our tips on the tip page to help improve in ways to concentrate. The tip page is allocated at the top left of the our homepage. The tip page has been designed by our team to facilitate the bare minimum needs to complete these tasks.";
+	document.getElementsByTagName('p')[1].innerHTML = "If not, no need to panic!! Our teams are reachable 24/7 through our customer help care email, our helpline that is reachable via phonecall, text and Whatsapp. We also accept letters to our head quarters, we do make our customers aware that this method of contact can take alot longer than our other methods. You can find all our contact information under'Contact Information' located at the bottom of this page.";
+}
+	</script> <!-- closing the script tag -->
+	
+	</head> <!-- closing the head tag-->
+		
+	<body class="gallerybody">
+		<h1 class="heading"> Tips/Resources For Working From Home </h1> <!-- Tagline for the webpage -->
+		<div class="nav"> <!-- Navbar in a div tag so everything within the div tag can be collectively edited within the stylesheet --> <!-- Navbar was made and styled by DEAN -->
+			<a href="index.html">Tips</a> <!-- Anchor tag on navbar used to link back to tips.html page, made by DEAN -->
+			<a href="resources.html">Resources</a> <!-- Second anchor tag used to link to resources.html page, made by ADRIANA -->
+			<a href="gallery.html">Gallery</a> <!-- Third anchor tag on navbar used to link to gallery.html page, made by KAITLIN -->
+			<a href="help.html">Help</a> <!-- Fourth anchor tag on navbar used to link to help.html page, made by KAITLIN-->
+			<a class="game" href="game.html">Game</a> <!-- Fifth anchor tag used to link to game.html page + given a class to be used to style content within it red -->
+			<a class="signup" href="signup.html">Sign Up for Newsletter</a> <!-- Sixth anchor tag used to link back to signup.html page + class used to style content within it royal blue-->
+		</div> <!-- Closing div tag -->
+		
+			<a href="index.html"><img src="images/work.png" alt="tip1" class="logo" width="75" height="75"></a> <!-- Logo designed by DEAN -->
+		 
+		
+		<h2 style="text-align:center">Slideshow Gallery
+		</h2> <!--Heading for the slideshow -->
+
+ 
+ <div class="galcontainer">
+  <div class="mySlides">
+    <div class="numbertext">1 / 5</div>
+    <img src="images/homelearninggal.png" alt="home learning" style="width:80%" height="500">
+  </div>
+  </div>
+
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 5</div>
+    <img src="images/athomegal.png" alt="at home" style="width:80%" height="500">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 5</div>
+    <img src="images/blocksgal.jpg" alt="blocks" style="width:80%" height="500">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 5</div>
+    <img src="images/diarygal.jpg" alt="diary girl" style="width:80%" height="500">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 5</div>
+    <img src="images/healthygal.jpg" alt="healthy girl" style="width:80%" height="500">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)"></a>
+  <a class="next" onclick="plusSlides(1)"></a>
+  
+  
+
+		<script>
+	let slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	showSlides(slideIndex += n);
+}
+
+	function currentSlide(n) {
+	showSlides(slideIndex = n);
+}
+
+	function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+		</script>
+
+		<div class="picture1" onclick="change()">  
+		This Is Our logo<!-- Information for the webpage -->
+		</div>
+		
+		<p>
+		 Click to see information about the picture<!-- Answer to the question -->
+		 </p>
+		
+		<div class="picture2" onclick="change()"> 
+		Working At Home<!-- Information for the webpage -->
+		</div>
+
+		<p>
+		 Click to see information about the picture<!-- Answer to the question -->
+		</p>
+	
+		<div class="picture3" onclick="change()"> 
+		Time For A Break<!-- Information for the webpage -->
+		</div>
+		
+		<p>
+		 Click to see information about the picture<!-- Answer to the question -->
+		</p>
+		
+		<div class="picture4" onclick="change()"> 
+		Keep Notes<!-- Information for the webpage -->
+		</div>
+		
+		<p>
+		 Click to see information about the picture<!-- Answer to the question -->
+		</p>
+		
+		<div class="picture5" onclick="change()"> 
+		Healthy Diet<!-- Information for the webpage -->
+		</div>
+		
+		<p>
+		 Click to see information about the picture<!-- Answer to the question -->
+		</p>
+		
+		<div class="picture6" onclick="change()"> 
+		Asking For Help<!-- Information for the wepage -->
+		</div>
+		
+		<p>
+		 Click to see information about the picture<!-- Answer to the question -->
+		</p>
+	
+	
+	<footer class="galleryfooter"> <!-- Footer made and styled by DEAN -->
+			<a href="index.html"><img src="images/work.png" alt="tip1" class="galleryflogo" width="75" height="75"></a> <!-- Logo designed by DEAN -->
+			<div class="footercontainer">
+				<div class="footerrow">
+					<div class="footer-col">
+					<h4> Directory </h4>
+					<ul class="ful">
+					
+					<li class="fli"><a href="index.html">Tips</a></li> <!-- Anchor tag on footer used to link back to tips.html page, made by DEAN -->
+					<li class="fli"><a href="resources.html">Resources</a></li> <!-- Second anchor tag used to link to resources.html page, made by ADRIANA -->
+					<li class="fli"><a href="gallery.html">Gallery</a></li> <!-- Third anchor tag on navbar used to link to gallery.html page, made by KAITLIN -->
+					<li class="fli"><a href="help.html">Help</a></li> <!-- Fourth anchor tag on navbar used to link to help.html page, made by KAITLIN-->
+					<li class="fli"><a href="game.html">Game</a></li> <!-- Fifth anchor tag used to link to game.html page + given a class to be used to style content within it red -->
+					</ul>
+					</div>
+					
+					<div class="footer-col">
+					<h4> Follow us on </h4>
+					<div class="socials">
+						<ul class="ful">
+							<li class="fli"><i class="fa-brands fa-square-facebook" style="font-size:40px"></i></li> <!-- Icons got from fontawesome -->
+							<li class="fli"><i class="fa-brands fa-square-instagram" style="font-size:40px"></i></li>
+							<li class="fli"><i class="fa-brands fa-square-twitter" style="font-size:40px"></i></li>
+							<li class="fli"><i class="fa-brands fa-square-snapchat" style="font-size:40px"></i></li>
+							<li class="fli"><i class="fa-brands fa-square-youtube" style="font-size:40px"></i></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		</footer>	
+	</body> <!-- Closing body tag -->
+</html> <!-- Closing html tag -->

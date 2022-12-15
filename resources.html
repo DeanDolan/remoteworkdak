@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Declaring langauge of the webpage -->
+
+   <head>
+        <title>Resources for working online</title> <!-- Title of the webpage -->
+        <link rel="stylesheet" href="css/styles.css"> <!-- Link to the stylesheet -->
+		<script src="https://kit.fontawesome.com/926566bafa.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body class="resourcebody">
+        
+        <h1 class="heading"> Tips/Resources For Working From Home </h1> <!-- Heading for the webpage -->
+        
+		<div class="nav"> <!-- Navbar in a div tag so everything within the div tag can be collectively edited within the stylesheet --> <!-- Navbar was made by DEAN -->
+			<a href="index.html">Tips</a> <!-- Anchor tag on navbar used to link back to tips.html page, made by DEAN -->
+			<a href="resources.html">Resources</a> <!-- Second anchor tag used to link to resources.html page, made by ADRIANA -->
+			<a href="gallery.html">Gallery</a> <!-- Third anchor tag on navbar used to link to gallery.html page, made by KAITLIN -->
+			<a href="help.html">Help</a> <!-- Fourth anchor tag on navbar used to link to help.html page, made by KAITLIN-->
+			<a class="game" href="game.html">Game</a> <!-- Fifth anchor tag used to link to game.html page + given a class to be used to style content within it red -->
+			<a class="signup" href="signup.html">Sign Up for Newsletter</a> <!-- Sixth anchor tag used to link back to signup.html page + class used to style content within it royal blue-->
+		</div> <!-- Closing div tag -->
+		
+        
+		<h1 class="res">RESOURCES FOR REMOTE WORK AND STUDY</h1>
+        
+        <a href="index.html"><img src="images/work.png" alt="tip1" class="logo" width="75" height="75"></a>
+		
+		<img src="images/remote2.jpg" alt="remotework" width="200" height="150" class="remotepic">
+		
+        <div class="res1">
+			<button onmouseover="highlight1()" class="button2-1">Highlight</button>
+		<div class="respar1">
+        <p> Remote working and study is a new upcomming concept for  many people due covid therfore working in an enclosed space with many people was seen to be <span id="resp1-1">unefficiant and dangerous as covid is dying out slowly</span> and more under control some are able to return back to work  but it is still a <span id="resp1-2">hazard</span>. Many companies are still going to use the rules of only visiting the office once a week and many colleges still offer <span id="resp1-3">online lectures</span> as now a few people will be working during the week aswell therfore they can catch up later with <span id="resp1-4">recorded lectures</span>. </p>
+		</div>
+		
+		<div class="respar2">
+        <p> When working or learning your college course from home it can be difficult. Therefore I will give  you some tips and provide some links to help you understand some benefical practices that can help make this so much <span id="resp1-5">easier for you and your coworkers to  help manage your mental and physical health</span> while working from home. Many find it hard as you dont commute into work that will provide you with a suitable working space therefore when working or studying from home it can be difficult as you <span id="resp1-6">may not have a quiet suitable space</span> that can be provided for you. </p>
+		</div>
+		<script> // Javascript implemented
+		function highlight1(){ // Given button a function 
+				document.getElementById('resp1-1').style.color ="red"; // Changing the color of the writing within these IDs to red
+				document.getElementById('resp1-2').style.color ="red"; 
+				document.getElementById('resp1-2').style.fontSize ="x-large"; // Changing font size of resp1-2 by using its ID
+				document.getElementById('resp1-3').style.color ="red";
+				document.getElementById('resp1-4').style.color ="red"; 
+				document.getElementById('resp1-5').style.color ="red"; 
+				document.getElementById('resp1-6').style.color ="red"; 
+		}
+		</script>
+		</div>
+		
+		<div class="res2">
+			<button onmouseover="highlight2()" class="button2-2">Highlight</button>
+		<p> Some suggestions I have if you cannot find a suitable space for yourself is to either one <span id="resp2-1">visit your local or college library</span> that is provided for free to study. If not then maybe a <span id="resp2-2">local internet cafe</span> could be your cup of tea. A good set of headphones to <span id="resp2-3">block out outer sounds</span> can be useful aswell. Listening to <span id="resp2-4">classical music</span> is seen as beneficial while studying or doing work. </p>
+		
+		<script> // Javascript implemented
+		function highlight2(){ // Given button a function 
+				document.getElementById('resp2-1').style.color ="yellow"; // Changing the color of the writing within these IDs to red
+				document.getElementById('resp2-2').style.color ="yellow"; 
+				document.getElementById('resp2-3').style.color ="yellow";
+				document.getElementById('resp2-3').style.fontSize ="x-large"; // Changing font size of resp2-3 by using its ID
+				document.getElementById('resp2-4').style.color ="yellow"; 
+		}
+		</script>
+		</div>
+		
+        <img src="images/resources.png" alt="resource" width="200" height="150" class="respic">
+		
+		<footer class="resourcefooter"> <!-- Footer made by DEAN -->
+			<a href="index.html"><img src="images/work.png" alt="tip1" class="footerlogo" width="75" height="75"></a> <!-- Logo designed by DEAN -->
+			<div class="footercontainer">
+				<div class="footerrow">
+					<div class="footer-col">
+					<h4> Directory </h4>
+					<ul class="ful">
+					
+					<li class="fli"><a href="index.html">Tips</a></li> <!-- Anchor tag on footer used to link back to tips.html page, made by DEAN -->
+					<li class="fli"><a href="resources.html">Resources</a></li> <!-- Second anchor tag used to link to resources.html page, made by ADRIANA -->
+					<li class="fli"><a href="gallery.html">Gallery</a></li> <!-- Third anchor tag on navbar used to link to gallery.html page, made by KAITLIN -->
+					<li class="fli"><a href="help.html">Help</a></li> <!-- Fourth anchor tag on navbar used to link to help.html page, made by KAITLIN-->
+					<li class="fli"><a href="game.html">Game</a></li> <!-- Fifth anchor tag used to link to game.html page + given a class to be used to style content within it red -->
+					<li class="fli"><a href="tips.html">Newsletter</a></li> <!-- Sixth Anchor tag used to link to signup.html -->
+					</ul>
+					</div>
+					
+					<div class="footer-col">
+					<h4> Follow us on </h4>
+					<div class="socials">
+						<ul class="ful">
+							<li class="fli"><i class="fa-brands fa-square-facebook" style="font-size:40px"></i></li> <!-- Icons got from fontawesome -->
+							<li class="fli"><i class="fa-brands fa-square-instagram" style="font-size:40px"></i></li>
+							<li class="fli"><i class="fa-brands fa-square-twitter" style="font-size:40px"></i></li>
+							<li class="fli"><i class="fa-brands fa-square-snapchat" style="font-size:40px"></i></li>
+							<li class="fli"><i class="fa-brands fa-square-youtube" style="font-size:40px"></i></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		</footer>	
+	</body> <!-- Closing body tag -->
+</html> <!-- Closing html tag -->
